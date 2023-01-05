@@ -24,10 +24,13 @@ const ItemDetailContainer = () => {
     
             promesa
             .then(response=>{
-                console.log(response)
-                const JuegoFiltrado = response.find(elemente=> elemente.id.toString() === id)
-                console.log(JuegoFiltrado)
-                setDetail(JuegoFiltrado)
+                if(id){
+                    console.log(response)
+                    const JuegoFiltrado = response.find(elemente=> elemente.id.toString() === id)
+                    console.log(JuegoFiltrado)
+                    setDetail(JuegoFiltrado)
+                }
+
             })
     
             .catch(error=>{
@@ -42,7 +45,12 @@ const ItemDetailContainer = () => {
 
     return (
         <div>
+            {
+            Object.Keys(detail).length ?
             <ItemDetail detail={detail}></ItemDetail>
+            :
+            null
+        }   
         </div>
     )
 }
