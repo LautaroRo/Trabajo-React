@@ -2,7 +2,7 @@ import React from 'react'
 import "./estilos.css"
 
 
-const ItemListeContainer = ({greeting}) => {
+const Mensaje = ({greeting}) => {
 
     return (
         <div>
@@ -14,4 +14,4 @@ const ItemListeContainer = ({greeting}) => {
     )
 }
 
-export default ItemListeContainer
+export default Mensaje

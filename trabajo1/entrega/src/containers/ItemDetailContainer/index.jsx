@@ -46,7 +46,7 @@ const ItemDetailContainer = () => {
     return (
         <div>
             {
-            Object.Keys(detail).length ?
+            Object.keys(detail).length ?
             <ItemDetail detail={detail}></ItemDetail>
             :
             null

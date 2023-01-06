@@ -7,7 +7,7 @@ import ItemList  from '../../components/ItemList'
 import { useParams } from 'react-router-dom'
 
 
-const Productos = () => {
+const ItemListContainer = () => {
 
 
     const {categoryId} = useParams()
@@ -51,4 +51,4 @@ const Productos = () => {
 }
 
 
-export default Productos
+export default ItemListContainer

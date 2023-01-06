@@ -1,0 +1,117 @@
+.detailT{
+    margin-top: 60px;
+    position: absolute;
+    left: 701px;
+    font-size: 50px;
+    color: white;
+}
+
+
+.spanCarrito{
+    color:white;
+    
+}
+
+
+.verPrecio{
+    font-size: 40px;
+    color: white;
+    margin-top: -18px;
+    margin-left: 15px;
+}
+
+.imgComprar{
+    height: 400px;
+    margin-top: 30px;
+    width: 800px;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+
+.divProductoElegido{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    background-color: white;
+    margin-left: 520px;
+    margin-top: 100px;
+    border-radius: 30px;
+    background-image: url("https://cdn.wallpapersafari.com/48/97/jN2JiQ.jpg");
+    background-size: cover;
+}
+
+.botonesComprar{
+    margin-top: 30px;
+    flex-direction: row;
+    
+}
+
+.botonVer{
+    background-color: green;
+    height: 30px;
+    position: relative;
+    left: -280px;
+}
+
+.botonVer:hover{
+    background-color: lightgreen;
+}
+
+.botonComprar{
+    background-color: rgb(112, 112, 245);
+    height: 30px;
+    position: absolute;
+    right: 480px;
+}
+
+.botonComprar:hover{
+    background-color: lightblue;
+}
+
+.botonSumar{
+    position: relative;
+    left: -20px;
+}
+
+.botonRestar{
+    position: relative;
+    right: -20px;
+}
+
+.posicionBotones{
+    margin-left: 420px;
+}
+
+
+.botonesVer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 335px;
+}
+
+.h1Comprar{
+    background: url("https://i.pinimg.com/originals/f7/96/d0/f796d024fc5f066a1c4707bedbb0c2ea.jpg");
+    background-size: cover;
+    margin-top: 100px;
+    margin-left: 240px;
+    width: 1400px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 5px black;
+    color: white;
+}
+
+.h1MensajeComprar{
+    color: white;
+    position: relative  ;
+    top: 50px;
+    left: 410px;
+}
+
+
+.descripcion{
+    color: white;
+    margin-top: 120px;
+    padding: 40px;
+}

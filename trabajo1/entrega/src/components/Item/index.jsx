@@ -13,11 +13,11 @@ const Item = ({product}) => {
     <div>
 
       <main className='productos'>
-        <article>
+        <article className="filaProductos">
             <h3>{product.categoria}<button className="mas"><FontAwesomeIcon icon={faPlus}/></button></h3>
             <img className='imagenes'src={product.img} alt={product.id} />
             <h3>{product.nombre}</h3>
-            <Link to={`/detail/${product.id}`} className="boton"><FontAwesomeIcon icon={faCartShopping}/></Link>
+            <Link to={`/detail/${product.id}`} ><FontAwesomeIcon icon={faCartShopping} className="boton"/></Link>
             
         </article>
         </main>
