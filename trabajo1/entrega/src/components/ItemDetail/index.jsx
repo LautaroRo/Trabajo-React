@@ -49,13 +49,6 @@ const VerPrecio = () =>{
           bloquear(false)
       }
 
-
-      if(precio===0){
-        
-      }
-
-
-
   })
 
   return (
