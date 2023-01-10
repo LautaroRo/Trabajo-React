@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ItemDetail from '../../components/ItemDetail'
 import juegos from "../../data/juegos.json"
+import Cart from '../../containers/Cart'
 
 const ItemDetailContainer = () => {
     
@@ -45,12 +46,21 @@ const ItemDetailContainer = () => {
 
     return (
         <div>
+            <div>
             {
-            Object.keys(detail).length ?
-            <ItemDetail detail={detail}></ItemDetail>
-            :
-            null
-        }   
+            Object.keys(detail).length === 0
+            ? <h2>Loading</h2>
+            : <ItemDetail detail={detail}></ItemDetail>     
+            }
+            </div>
+            <div>
+            {
+                Object.keys(detail).length === 0
+                ? <h2>Loading</h2>
+                : <Cart producto={detail}></Cart>     
+            }
+            </div>
+
         </div>
     )
 }
