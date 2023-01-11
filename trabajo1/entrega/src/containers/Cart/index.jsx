@@ -6,7 +6,9 @@ const Cart = ({producto}) => {
   return (
     <div>
       <div className='divCarro'>
-        <img src={producto.img}/>
+        <h1 className='mensajeCarrito'>Hora de comprar</h1>
+        <div className='divComprarProducto'>
+        </div>
       </div>
     </div>
   )

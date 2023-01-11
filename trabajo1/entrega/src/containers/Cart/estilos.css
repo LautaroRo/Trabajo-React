@@ -1,3 +1,38 @@
 .divCarro{
+    background-image: url("https://www.xtrafondos.com/descargar.php?id=3593&resolucion=2560x1440");
+    background-size: cover;
+    margin-top: 100px;
+    margin-left: 240px;
+    width: 1400px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 5px black;
+    color: white;
+}
+
+.mensajeCarrito{
+    color: white;
+    position: relative  ;
+    top: 50px;
+    left: 570px;
+}
+
+
+.divComprarProducto{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    background-color: white;
+    margin-left: 520px;
+    margin-top: 100px;
+    border-radius: 30px;
     background-color: black;
+}
+
+.foto{
+    height: 400px;
+    margin-top: 30px;
+    width: 800px;
+    margin-left: 50px;
+    border-radius: 10px;
 }

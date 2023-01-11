@@ -62,7 +62,7 @@ const VerPrecio = () =>{
 
     <div>
       <div className="h1Comprar">
-        <h1 className="h1MensajeComprar">hora de comprar tu juego!!!!!</h1>
+        <h1 className="h1MensajeComprar">Selecciona la cantidad que deseas!!!!!</h1>
       </div>
       <div className="divProductoElegido">
         <h3 className='detailT'>{detail.nombre}</h3>
