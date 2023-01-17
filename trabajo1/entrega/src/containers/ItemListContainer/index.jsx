@@ -67,7 +67,7 @@ const ItemListContainer = () => {
     }
 
     return (
-        <div >
+        <div style={{paddingBottom:330}}>
             <ItemList productos={products}></ItemList>
             {
                 botonAd === true

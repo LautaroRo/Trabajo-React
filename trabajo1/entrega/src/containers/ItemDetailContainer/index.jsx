@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ItemDetail from '../../components/ItemDetail'
 import juegos from "../../data/juegos.json"
-import Cart from '../../containers/Cart'
+
 
 const ItemDetailContainer = () => {
     

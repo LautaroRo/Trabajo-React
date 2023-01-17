@@ -7,7 +7,7 @@ export default function(){
 
     return(
 
-    <div>
+    <div className="divCarrusel">
 
         
         <div className="carrusel">

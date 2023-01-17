@@ -2,12 +2,15 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import "./estilos.css"
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Shop } from "../../containers/Context/ShopProvider";
 
 
 
 
 const ItemDetail = ({detail}) => {
   
+  const {addProduct} = useContext(Shop)
 
   const {precio} = detail
   
@@ -39,6 +42,7 @@ const ItemDetail = ({detail}) => {
 const cantidad = () =>{
   console.log(cont)
   setcloseBoton(cont)
+  addProduct({...detail,cantidad: cont})
 }
 
 
@@ -60,7 +64,7 @@ const VerPrecio = () =>{
 
   return (
 
-    <div>
+    <div className="divPreCompra">
       <div className="h1Comprar">
         <h1 className="h1MensajeComprar">Selecciona la cantidad que deseas!!!!!</h1>
       </div>
@@ -87,8 +91,8 @@ const VerPrecio = () =>{
               </div>
             </div>
             :
-            <button>
-              <Link to="/cart">
+            <button className="BotonIrAcart">
+              <Link className="dentroDelBoton" to="/cart">
               go cart
               </Link>
             </button>

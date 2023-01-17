@@ -23,10 +23,11 @@
     flex-direction: column;
     width: 900px;
     background-color: white;
-    margin-left: 520px;
-    margin-top: 100px;
+    width: 1400px;
+    margin-top: 200px;
     border-radius: 30px;
     background-color: black;
+    margin-bottom: 200px;
 }
 
 .foto{

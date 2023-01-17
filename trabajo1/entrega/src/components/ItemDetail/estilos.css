@@ -1,9 +1,8 @@
 .detailT{
     margin-top: 60px;
-    position: absolute;
-    left: 701px;
     font-size: 50px;
     color: white;
+    text-align: center;
 }
 
 
@@ -86,7 +85,7 @@
 .botonesVer{
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: 335px;
 }
 
@@ -112,6 +111,35 @@
 
 .descripcion{
     color: white;
-    margin-top: 120px;
+    margin-top: 10px;
     padding: 40px;
+}
+
+
+.BotonIrAcart{
+    background-color: white;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 360px;
+    width: 190px;
+}
+
+.BotonIrAcart:hover{
+
+    background-color: lightblue;
+
+}
+
+.dentroDelBoton{
+    margin-bottom:140px;
+    text-decoration: none;
+    color: black;
+}
+
+.dentroDelBoton:hover{
+    color: black;
+}
+
+.divPreCompra{
+    margin-bottom: 200px;
 }

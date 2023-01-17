@@ -44,7 +44,7 @@ export default function({ofertas,noticias,categorias}){
                         <Link className="dropdown-item" to="/category/Mundo Abierto">Mundo Abierto</Link>
                     </li>
                     <li>
-                        <Link className="dropdown-item" to="/category/Free to Play">Free to play</Link>
+                        <Link className="dropdown-item" to="/category/Gratis">Gratis</Link>
                     </li>
                     <li>
                         <Link className="dropdown-item" to="/category/Survival Horror">Survival Horror</Link>

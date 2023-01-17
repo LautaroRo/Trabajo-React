@@ -8,7 +8,8 @@ import ItemListContainer from './containers/ItemListContainer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import ItemDetailContainer from './containers/ItemDetailContainer';
 import Cart from "./containers/Cart"
-
+import ShopProvider from './containers/Context/ShopProvider';
+import Comprar from ".././src/components/Comprar"
 
 
 
@@ -18,10 +19,9 @@ import Cart from "./containers/Cart"
 function App() {
   return (
 
-
-    <div>
-      <body className='bodyIndex'>
-      <BrowserRouter>
+<ShopProvider>
+    <body className='bodyIndex'>
+    <BrowserRouter>
                     <Navbar
                         categorias="categorias"
                         noticias="noticias"
@@ -31,6 +31,7 @@ function App() {
                     <Mensaje greeting={"observa los juegos gratis mas famosos !!!"}/>
                     <Carrusel />
                     <Main />
+
 
                     <Routes>
                         <Route path="/" element={<ItemListContainer />}></Route>
@@ -43,10 +44,14 @@ function App() {
                             element={<ItemDetailContainer />}
                         ></Route>
                         <Route
+
+                            path="/Comprar"
+                            element={<Comprar></Comprar>}
+                        ></Route>
+                        <Route
                             path="/cart"
                             element={<Cart/>}
                         ></Route>
-
                         <Route
                             path="*"
                             element={
@@ -54,17 +59,14 @@ function App() {
                             }
                         ></Route>
                     </Routes>
-
+                    <Footer></Footer>
             </BrowserRouter>
-            <Footer></Footer>
             
-        </body>
 
+            </body>
+</ShopProvider>
 
-    </div>
-
-
-  );
+);
 }
 
 export default App;

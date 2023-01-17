@@ -1,7 +1,7 @@
 [
     {
         "id":1,
-        "category": "shooters",
+        "category": "Shooters",
         "nombre": "Call of Duty: Black Ops 2",
         "descripcion": "Call of Duty: Black Ops II es el segundo juego de la saga Call of Duty en presentar la futura tecnología de la guerra, y el primero en presentar historias de ramificación impulsados por elección del jugador, así como la selección de armas antes de comenzar las misiones del modo historia.",
         "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/202970/capsule_616x353.jpg?t=1654830020",
@@ -74,7 +74,7 @@
 
     {
         "id":9,
-        "categoria": "Free to Play",
+        "category": "Gratis",
         "nombre": "League of Legends",
         "descripcion": "League of Legends es un juego de estrategia por equipos en el que dos equipos conformados por cinco poderosos campeones se enfrentan para destruir la base del otro. Elige de entre más de 140 campeones para realizar jugadas épicas, asegurar asesinatos y destruir torretas mientras avanzas hacia la victoria.",
         "img": "https://i.pinimg.com/originals/53/23/12/53231242393e0d3c1994950c4faff6df.jpg",
