@@ -16,11 +16,9 @@ console.log(countCart)
 return (
 
 <div>
-
-    <Link to="/cart">
-    <p><FontAwesomeIcon icon={faCartShopping} className="carrito"/>
+    <Link to="/cart" className="linkCarrito">
+        <FontAwesomeIcon icon={faCartShopping} className="carrito"/>
         <span className="span">{countCart()}</span>
-    </p>
     </Link>
 </div>
     );

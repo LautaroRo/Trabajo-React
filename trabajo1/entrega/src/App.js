@@ -2,15 +2,14 @@ import './App.css';
 import Navbar from './components/NavBar';
 import Mensaje from "./containers/Mensaje"
 import Main from './components/Main';
-import Carrusel from './components/Carrusel';
 import Footer from "./components/Footer"
 import ItemListContainer from './containers/ItemListContainer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import ItemDetailContainer from './containers/ItemDetailContainer';
-import Cart from "./containers/Cart"
 import ShopProvider from './containers/Context/ShopProvider';
 import Comprar from ".././src/components/Comprar"
-
+import CartMap from './components/CartMap';
+import Cart from "./containers/Cart"
 
 
 
@@ -27,9 +26,9 @@ function App() {
                         noticias="noticias"
                         ofertas="ofertas"
                     />
-
-                    <Mensaje greeting={"observa los juegos gratis mas famosos !!!"}/>
-                    <Carrusel />
+                    <Mensaje greeting={"observa los juegos gratis mas famosos !!!"}></Mensaje>
+                    
+                    
                     <Main />
 
 

@@ -5,7 +5,8 @@
         "nombre": "Call of Duty: Black Ops 2",
         "descripcion": "Call of Duty: Black Ops II es el segundo juego de la saga Call of Duty en presentar la futura tecnología de la guerra, y el primero en presentar historias de ramificación impulsados por elección del jugador, así como la selección de armas antes de comenzar las misiones del modo historia.",
         "img": "https://cdn.cloudflare.steamstatic.com/steam/apps/202970/capsule_616x353.jpg?t=1654830020",
-        "precio" : 300
+        "precio" : 300,
+        "video" : "https://www.youtube.com/watch?v=x3tedlWs1XY"
     },
 
     {
@@ -14,8 +15,8 @@
         "nombre": "Grand Theft Auto V",
         "descripcion":"Grand Theft Auto V es un videojuego de acción-aventura británico, desarrollado por el estudio Rockstar North y distribuido por Rockstar Games. Fue lanzado el 17 de septiembre de 2013 para las consolas PlayStation 3 y Xbox 360.​ ",
         "img": "https://img.zonared.com/images/videos/fondos/13500/13573.jpg",
-        "img2": "https://images7.alphacoders.com/439/439636.jpg",
-        "precio" : 500
+        "precio" : 500,
+        "video": "https://www.youtube.com/watch?v=2S4O8Ea6M9Y"
     },
 
     {
@@ -24,7 +25,8 @@
         "nombre": "Days Gone",
         "descripcion":"Days Gone es un título desarrollado por Bend Studio y distribuido por Sony en exclusiva para PlayStation 4. Se centra en la historia de Deacon St. John, un motero maleante que aprende a sobrevivir en el fin del mundo.",
         "img": "https://as01.epimg.net/meristation/imagenes/2022/01/07/noticias/1641554478_180568_1641554562_portada_normal.jpg",
-        "precio" : 750
+        "precio" : 750,
+        "video": "https://www.youtube.com/watch?v=FKtaOY9lMvM"
     },
 
     {
@@ -33,7 +35,8 @@
         "nombre": "Resident Evil 2",
         "descripcion":"Transcurre en Raccoon City, una ciudad estadounidense cuya población en su mayoría ha sido transformada en zombie por el virus-T, un arma biológica desarrollada por la compañía Umbrella. Mientras huyen de la ciudad, el Oficial novato oficial Leon S.",
         "img": "https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2018/12/Resident-Evil-21-scaled.jpg?fit=2560%2C1321&quality=50&strip=all&ssl=1",
-        "precio" : 450
+        "precio" : 450,
+        "video": "https://www.youtube.com/watch?v=u3wS-Q2KBpk"
     },
 
     {
@@ -42,7 +45,8 @@
         "nombre": "Uncharted 4",
         "descripcion":"En medio de una tormenta, Nathan Drake conduce una lancha en el mar junto a su hermano, Samuel Drake, mientras son perseguidos por un grupo de mercenarios. Pero sus intentos por escapar son en vano y su lancha es derribada por un barco.",
         "img": "https://i.blogs.es/09a281/uncharted400/1366_2000.jpg",
-        "precio" : 500
+        "precio" : 500,
+        "video" : "https://www.youtube.com/watch?v=hh5HV4iic1Y"
     },
 
     {
@@ -51,7 +55,8 @@
         "nombre": "The forest",
         "descripcion":"The Forest, desarrollado por Endnight Games para PC y PlayStation 4, es una aventura survival horror en primera persona en la que deberemos sobrevivir en un oscuro bosque tras sufrir un accidente aéreo.",
         "img": "https://store.playstation.com/store/api/chihiro/00_09_000/container/AR/es/99/UP0240-CUSA10518_00-THEFOREST0000000/0/image?_version=00_09_000&platform=chihiro&bg_color=000000&opacity=100&w=720&h=720",
-        "precio" : 300
+        "precio" : 300,
+        "video": "https://www.youtube.com/watch?v=7mwn5U2PNvk"
     },
 
     {
@@ -60,7 +65,8 @@
         "nombre": "Fifa 23",
         "descripcion":"FIFA 23 lleva El Juego de Todos al campo con los torneos de la Copa Mundial de la FIFA™ masculina y femenina, la incorporación de clubes femeninos y nuevas formas de jugar tus modos favoritos. Los avances en la tecnología HyperMotion2 proporcionan aún más acción y realismo al campo de juego en PS5.",
         "img": "https://i.blogs.es/5a54fa/bowvc0q9dfw6qhgvx9dd13sr/1366_2000.jpeg",
-        "precio" : 650
+        "precio" : 650,
+        "video" : "https://www.youtube.com/watch?v=zMyeAFzCTM0"
     },
 
     {
@@ -69,7 +75,8 @@
         "nombre": "Five Nights at Freddy's 4",
         "descripcion":"Five Nights at Freddy's 4 es un videojuego de terror donde asumimos el papel de un niño que debe sobrevivir a sus terrores nocturnos con los animatrónicos nightmare. Al final de cada noche se nos presentará un minijuego, en total 6, donde seguimos la vida de Evan Afton, hijo menor de William Afton, una semana antes de su fiesta de cumpleaños.",
         "img": "https://sitiodelegir.files.wordpress.com/2015/08/fredbear.png?w=640",
-        "precio" : 350
+        "precio" : 350,
+        "video" : "https://www.youtube.com/watch?v=A-taWymx1WI"
     },
 
     {
@@ -78,7 +85,8 @@
         "nombre": "League of Legends",
         "descripcion": "League of Legends es un juego de estrategia por equipos en el que dos equipos conformados por cinco poderosos campeones se enfrentan para destruir la base del otro. Elige de entre más de 140 campeones para realizar jugadas épicas, asegurar asesinatos y destruir torretas mientras avanzas hacia la victoria.",
         "img": "https://i.pinimg.com/originals/53/23/12/53231242393e0d3c1994950c4faff6df.jpg",
-        "precio" : 0
+        "precio" : 0,
+        "video" : "https://www.youtube.com/watch?v=mDYqT0_9VR4"
     },
 
     {
@@ -87,7 +95,8 @@
         "nombre": "GTA: San Andreas",
         "descripcion": "Ambientada en los principios de la década de 1990, concretamente en 1992, Grand Theft Auto: San Andreas narra la historia de Carl Johnson (CJ), quien decide volver a Los Santos para asistir al funeral de su madre, Beverly, quien resultó asesinada en un tiroteo.",
         "img": "https://i.cnnturk.com/i/cnnturk/75/740x416/60feabc4c8c37312bcfe2d98.jpg",
-        "precio" : 500
+        "precio" : 500,
+        "video" : "https://www.youtube.com/watch?v=nyk1xKCVFZo"
     }
 
 

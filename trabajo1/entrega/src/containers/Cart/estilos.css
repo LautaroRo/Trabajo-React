@@ -17,14 +17,10 @@
     left: 570px;
 }
 
-
 .divComprarProducto{
     display: flex;
-    flex-direction: column;
-    width: 900px;
+    flex-direction: row;
     background-color: white;
-    width: 1400px;
-    margin-top: 200px;
     border-radius: 30px;
     background-color: black;
     margin-bottom: 200px;

@@ -26,7 +26,7 @@
 
 .carrito{
     color: white;
-    height: 35px;
+    height: 25px;
     margin-top: 25px;
     margin-right: 55px;
     position: relative;
@@ -74,4 +74,8 @@
 .trash:hover{
     background-color: black;
     color: white;
+}
+
+.linkCarrito{
+    text-decoration: none;
 }

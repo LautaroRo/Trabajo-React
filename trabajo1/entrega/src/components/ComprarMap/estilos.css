@@ -1,0 +1,37 @@
+.formulario{
+    margin: 30px;
+    background-color: black;
+    display: flex;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 80px;
+    color: white;
+}
+
+
+
+.inputFormulario{
+    height: 70px;
+    margin-top: 210px;
+    margin-left: 210px;
+}
+
+.precioFinal{
+    margin-top: 220px;
+    margin-left: -990px;
+    color: white;
+}
+
+.botonFormulario{
+    height: 70px;
+    margin-top: 210px;
+}
+
+
+.textoError{
+    color: white;
+    
+}

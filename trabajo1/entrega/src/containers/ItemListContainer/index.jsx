@@ -6,20 +6,47 @@ import productos from "../../data/juegos.json"
 import ItemList  from '../../components/ItemList'
 import { useParams } from 'react-router-dom'
 import Ad from "../../components/Ad"
+import { db } from '../../firebase/config'
+import { collection, getDocs, query, where } from "firebase/firestore"; 
 
 
 const ItemListContainer = () => {
 
     
     const {categoryId} = useParams()
+    console.log(db)
 
-    console.log(categoryId)
+    
     const [products, setProducts] = useState([])
     const [botonAd, setBotonAd] = useState(true)
 
     useEffect(()=> {
 
-    const promesa = new Promise((acc, rec) => {
+        const getProducts = async () =>{
+            let querySnapshot
+            if(categoryId){
+                const q = query(collection(db, "juegos"), where("category", "==", categoryId));
+                querySnapshot = await getDocs(q);
+            }
+            else{
+                querySnapshot = await getDocs(collection(db, "juegos"));
+            }
+            const productosFirebase = []
+            querySnapshot.forEach((doc) => {
+            console.log(`${doc.id} => ${doc.data()}`);
+            const juegos = {
+                id: doc.id,
+                ...doc.data()
+            }
+            productosFirebase.push(juegos)
+            });
+            setProducts(productosFirebase)
+
+
+        }
+        getProducts()
+
+    /*--const promesa = new Promise((acc, rec) => {
         setTimeout(() => {
             acc(productos);
         }, 3000);
@@ -40,7 +67,7 @@ const ItemListContainer = () => {
     .catch((err) => {
         alert("Hubo un error")
     });
-
+    --*/
 
     }, [categoryId])
 

@@ -7,7 +7,6 @@ import CartMap from '../../components/CartMap'
 const Cart = () => {
   
   const {products} = useContext(Shop)
-  console.log(products, "hola")
   return (
     <div>
       <div className='divCarro'>
