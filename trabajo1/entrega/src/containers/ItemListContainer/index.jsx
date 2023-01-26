@@ -7,44 +7,16 @@ import { useParams } from 'react-router-dom'
 import Ad from "../../components/Ad"
 import { db } from '../../firebase/config'
 import { collection, getDocs, query, where } from "firebase/firestore"; 
+import HookFirebase from '../../Hook'
 
 
 const ItemListContainer = () => {
 
     
     const {categoryId} = useParams()
-    console.log(db)
-
-    
-    const [products, setProducts] = useState([])
     const [botonAd, setBotonAd] = useState(true)
+    const [products,error] = HookFirebase(categoryId)
 
-    useEffect(()=> {
-
-        const getProducts = async () =>{
-            let querySnapshot
-            if(categoryId){
-                const q = query(collection(db, "juegos"), where("category", "==", categoryId));
-                querySnapshot = await getDocs(q);
-            }
-            else{
-                querySnapshot = await getDocs(collection(db, "juegos"));
-            }
-            const productosFirebase = []
-            querySnapshot.forEach((doc) => {
-            console.log(`${doc.id} => ${doc.data()}`);
-            const juegos = {
-                id: doc.id,
-                ...doc.data()
-            }
-            productosFirebase.push(juegos)
-            });
-            setProducts(productosFirebase)
-
-
-        }
-        getProducts()
-    }, [categoryId])
 
     useEffect(()=>{
 
@@ -70,6 +42,7 @@ const ItemListContainer = () => {
 
     return (
         <div style={{paddingBottom:330}}>
+            {error && <h1>Oh oh hubo un error: {error}</h1>}
             <ItemList productos={products}></ItemList>
             {
                 botonAd === true

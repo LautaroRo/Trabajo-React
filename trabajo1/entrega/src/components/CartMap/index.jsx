@@ -1,6 +1,6 @@
 import React from 'react'
 import { useContext } from 'react'
-import { Shop } from '../../containers/Context/ShopProvider'
+import { Shop } from '../../Context/ShopProvider'
 import "./estilos.css"
 import { Link } from "react-router-dom";
 

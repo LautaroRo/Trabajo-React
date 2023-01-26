@@ -3,7 +3,7 @@ import "./estilos.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping, faPlus, faX, faCheck, faTrash } from '@fortawesome/free-solid-svg-icons'
 import { useContext } from "react";
-import { Shop } from "../../containers/Context/ShopProvider";
+import { Shop } from "../../Context/ShopProvider";
 import { Link } from "react-router-dom";
 
 

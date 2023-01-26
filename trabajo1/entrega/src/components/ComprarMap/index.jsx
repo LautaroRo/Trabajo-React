@@ -1,7 +1,7 @@
 import React from 'react'
 import { useContext } from 'react'
 import { useState } from 'react'
-import { Shop } from '../../containers/Context/ShopProvider'
+import { Shop } from "../../Context/ShopProvider"
 import ReactPlayer from "react-player"
 import "./estilos.css"
 import { collection, addDoc } from "firebase/firestore"; 

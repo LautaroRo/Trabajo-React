@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./estilos.css"
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import { Shop } from "../../containers/Context/ShopProvider";
+import { Shop } from "../../Context/ShopProvider";
 
 
 

@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
+import ShopProvider from './Context/ShopProvider';
 
 
 
@@ -12,7 +13,10 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   //<React.StrictMode>
+  <ShopProvider>
     <App />
+  </ShopProvider>
+    
   //</React.StrictMode>
 );
 
