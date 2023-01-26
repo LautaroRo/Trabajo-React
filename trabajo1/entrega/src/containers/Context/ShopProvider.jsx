@@ -37,6 +37,8 @@ const ShopProvider = ({children}) => {
     setProducts([])
   }
 
+
+
   const Eliminar = (id) =>{
     console.log(id)
     const updateCart = products.filter(element => element.id !== id)
@@ -44,17 +46,14 @@ const ShopProvider = ({children}) => {
   }
 
 
-  
-
   const isProductInCart = (id) =>{
 
     return products.some(element => element.id === id)
 
   }
 
-
   return (
-    <Shop.Provider value= {{products, addProduct,countCart, Limpiar,Eliminar}}>
+    <Shop.Provider value= {{products, addProduct,countCart, Limpiar,Eliminar,setProducts}}>
       {children}
     </Shop.Provider>
   )

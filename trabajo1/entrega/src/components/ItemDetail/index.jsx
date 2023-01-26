@@ -20,7 +20,7 @@ const ItemDetail = ({detail}) => {
   const [block, bloquear] = useState(false)
   
   const agregar = () =>{  
-    carrito(cont + 1)
+    if(cont < detail.Stock)carrito(cont + 1)
   }
 
   const quitar = () =>{
@@ -46,6 +46,11 @@ const cantidad = () =>{
 }
 
 
+const VerificarPrecio = () =>{
+  setcloseBoton(cont)
+}
+
+
 const VerPrecio = () =>{
     Final(cont * precio)
 }
@@ -63,8 +68,13 @@ const VerPrecio = () =>{
   })
 
   return (
-
-    <div className="divPreCompra">
+    <div>
+    {
+      detail.Stock === 0
+      ?
+      <img src="https://cloudfront-us-east-1.images.arcpublishing.com/semana/D6COKJW4HJCKVFR6UJ6M7VOZNE.jpg"></img>
+      :
+      <div className="divPreCompra">
       <div className="h1Comprar">
         <h1 className="h1MensajeComprar">Selecciona la cantidad que deseas!!!!!</h1>
       </div>
@@ -87,11 +97,11 @@ const VerPrecio = () =>{
               <div className="botonesVer">
                 <button onClick={VerPrecio} className="botonVer">Ver precio</button>
                 <p className="verPrecio">{precioFinal}</p>
-                <button onClick={cantidad} className="botonComprar">Comprar</button>
+                <button className="botonComprar" onClick={VerificarPrecio}>Comprar</button>
               </div>
             </div>
             :
-            <button className="BotonIrAcart">
+            <button className="BotonIrAcart" onClick={cantidad}>
               <Link className="dentroDelBoton" to="/cart">
               go cart
               </Link>
@@ -103,6 +113,10 @@ const VerPrecio = () =>{
 
         </div>
       
+    </div>
+    }
+
+    
     </div>
   )
   

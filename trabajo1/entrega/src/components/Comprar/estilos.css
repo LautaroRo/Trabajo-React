@@ -1,0 +1,15 @@
+.botonVolver{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.botonV{
+    height: 50px;
+    width: 200px;
+}
+
+.botonV:hover{
+    background-color: black;
+    color: white;
+}

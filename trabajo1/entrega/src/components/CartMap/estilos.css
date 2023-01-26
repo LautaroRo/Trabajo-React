@@ -1,21 +1,41 @@
 .divProductosCart{
     display: flex;
     flex-direction: row;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-around;
+    background-color: black;
     flex-wrap: wrap;
     margin-top: 100px;
     margin-left: 100px;
     margin-right: 80px;
     color: white;
-    margin-bottom: 200px;
+    padding: 50px;
+    border-radius: 100px;
 }
 
 .imgCarrito{
     height: 250px;
+    border-radius: 20px;
 }
 
 .h1Carrito{
     text-align: center;
+}
+
+.h2Cantidad{
+    display: flex;
+    align-items: center;
+}
+
+
+.botonCartForm{
+    width: 190px;
+    height: 70px;
+    margin-top: 120px;
+}
+
+.linkDecoration{
+    text-decoration: none;
+    color: black;
 }

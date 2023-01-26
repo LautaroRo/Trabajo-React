@@ -3,9 +3,9 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ItemDetail from '../../components/ItemDetail'
-import juegos from "../../data/juegos.json"
 import { doc, getDoc } from "firebase/firestore";
 import { db } from '../../firebase/config'
+import "./estilos.css"
 
 
 const ItemDetailContainer = () => {
@@ -36,34 +36,6 @@ const ItemDetailContainer = () => {
         }
 
         getProduct();
-
-        /*--
-        const getProducts = () => {
-
-            const promesa = new Promise((acc,rej)=>{
-                setTimeout(()=>{
-                    acc(juegos)
-                },2000)
-            })
-    
-            promesa
-            .then(response=>{
-                if(id){
-                    console.log(response)
-                    const JuegoFiltrado = response.find(elemente=> elemente.id.toString() === id)
-                    console.log(JuegoFiltrado)
-                    setDetail(JuegoFiltrado)
-                }
-
-            })
-    
-            .catch(error=>{
-                alert("error")
-            })
-        }
-
-        getProducts()
-        --*/
     },[id])
 
 
@@ -73,7 +45,10 @@ const ItemDetailContainer = () => {
             <div>
             {
             Object.keys(detail).length === 0
-            ? <h2>Loading</h2>
+            ?
+            <div className='loading'>
+                <h1>Loading</h1>
+            </div>
             : <ItemDetail detail={detail}></ItemDetail>     
             }
             </div>

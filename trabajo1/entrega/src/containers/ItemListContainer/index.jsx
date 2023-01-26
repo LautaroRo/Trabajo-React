@@ -2,7 +2,6 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import "./estilos.css"
-import productos from "../../data/juegos.json"
 import ItemList  from '../../components/ItemList'
 import { useParams } from 'react-router-dom'
 import Ad from "../../components/Ad"
@@ -45,30 +44,6 @@ const ItemListContainer = () => {
 
         }
         getProducts()
-
-    /*--const promesa = new Promise((acc, rec) => {
-        setTimeout(() => {
-            acc(productos);
-        }, 3000);
-    });
-
-    promesa
-
-    .then(products => {
-        
-    if (categoryId) {
-        const productosFiltradosPorCategoria = products.filter(producto => producto.category === categoryId)
-        console.log(productosFiltradosPorCategoria)
-            setProducts(productosFiltradosPorCategoria)
-    } else {
-        setProducts(products)
-    }
-    })
-    .catch((err) => {
-        alert("Hubo un error")
-    });
-    --*/
-
     }, [categoryId])
 
     useEffect(()=>{

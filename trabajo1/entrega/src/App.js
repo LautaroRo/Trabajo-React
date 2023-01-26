@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/NavBar';
 import Mensaje from "./containers/Mensaje"
-import Main from './components/Main';
+import Main from './components/ItemCount';
 import Footer from "./components/Footer"
 import ItemListContainer from './containers/ItemListContainer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
@@ -23,8 +23,6 @@ function App() {
     <BrowserRouter>
                     <Navbar
                         categorias="categorias"
-                        noticias="noticias"
-                        ofertas="ofertas"
                     />
                     <Mensaje greeting={"observa los juegos gratis mas famosos !!!"}></Mensaje>
                     

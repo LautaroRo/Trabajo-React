@@ -93,19 +93,18 @@
     background: url("https://i.pinimg.com/originals/f7/96/d0/f796d024fc5f066a1c4707bedbb0c2ea.jpg");
     background-size: cover;
     margin-top: 100px;
-    margin-left: 240px;
-    width: 1400px;
+    margin-left: 510px;
+    width: 50%;
     height: 150px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px 5px black;
-    color: white;
 }
 
 .h1MensajeComprar{
     color: white;
     position: relative  ;
     top: 50px;
-    left: 420px;
+    left: 180px;
 }
 
 
