@@ -34,8 +34,39 @@
     height: 70px;
     margin-top: 120px;
 }
+.botonCartForm:hover{
+    background-color: green;
+    color: white;
+}
 
 .linkDecoration{
     text-decoration: none;
     color: black;
+}
+
+.linkDecoration:hover{
+    color: white;
+}
+
+.botonCartFormEliminar{
+    width: 190px;
+    height: 70px;
+    margin-top: 120px;
+}
+
+
+.botonCartFormEliminar:hover{
+    background-color: red;
+    color: white;
+}
+
+.botonCartFormBorrar{
+    width: 190px;
+    height: 70px;
+    margin-top: 120px;
+}
+
+.botonCartFormBorrar:hover{
+    background-color: grey;
+    color: white;
 }

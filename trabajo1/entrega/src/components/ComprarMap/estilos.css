@@ -43,13 +43,40 @@
 
 .inputNumero{
     margin-left: 768px;
-    margin-top: -205px;
-    height: 60px;
+    margin-top: -215px;
+    height: 70px;
     width: 280px;
 }
 
 .Eliminar{
-    margin-top: -110px;
+    margin-top: -125px;
     width: 300px;
     height: 70px;
+}
+.Eliminar:hover{
+    background-color:red;
+    color: white;
+}
+
+.botonFormularioVerificar{
+    height: 70px;
+    margin-top: -125px;
+    margin-left: 750px;
+    width: 300px;
+}
+
+
+.botonFormularioVerificar:hover{
+    background-color: blue;
+    color: white;
+}
+.comprarForm{
+    margin-left: 780px;
+    width: 400px;
+    height: 50px;
+}
+
+.comprarForm:hover{
+    background-color: green;
+    color: white;
 }

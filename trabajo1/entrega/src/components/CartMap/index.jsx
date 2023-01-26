@@ -13,12 +13,12 @@ const CartMap = ({item}) => {
         <h1 className='h1Carrito'>
         {item.nombre}
       </h1>
-      <img className="imgCarrito"src={item.img}></img>
+      <img className="imgCarrito" src={item.img}></img>
       </div>
 
       <h2 className='h2Cantidad'>Cantidad: {item.cantidad}</h2>
-      <button className='botonCartForm' onClick={() => Eliminar(item.id)}>eliminar</button>
-      <button className='botonCartForm' onClick={Limpiar}>
+      <button className='botonCartFormEliminar' onClick={() => Eliminar(item.id)}>Eliminar</button>
+      <button className='botonCartFormBorrar' onClick={Limpiar}>
         Borrar todos los productos
         </button>
       <button className='botonCartForm'>

@@ -8,7 +8,7 @@ import { collection, addDoc } from "firebase/firestore";
 import { db } from '../../firebase/config'
 import { doc, updateDoc } from "firebase/firestore";
 import Swal from "sweetalert2"
-import { useEffect } from 'react'
+
 
 
 
@@ -115,13 +115,13 @@ return (
             <input type="email" placeholder='ingrese un email' className="inputFormulario" name="email1" required/>
             <input type="email" className="inputFormulario" placeholder='ingrese el mismo email' name="email2" required />
             <input type="number" className="inputNumero" placeholder='numero de telefono (min10)' name="NumeroDeTelefono"required/>
-            <button type='submit' className="botonFormulario">Verificar Precio</button>
+            <button type='submit' className="botonFormularioVerificar">Verificar Precio</button>
             <button className="Eliminar" onClick={() => Eliminar(item.id)}>Eliminar</button>
     </form>
     {
         PrecioFinal < MontoFinal && Email1 === Email2 && Numero.length > 9
         ?
-        <button onClick={() => generarObject(item.id)}>Comprar</button>
+        <button className='comprarForm' onClick={() => generarObject(item.id)}>Comprar</button>
         :
         null
         
@@ -159,7 +159,7 @@ return (
     {
         Email1 === Email2 && Numero.length > 9
         ?
-        <button onClick={() => generarObject(item.id)}>Comprar</button>
+        <button className='comprarForm' onClick={() => generarObject(item.id)}>Comprar</button>
         :
         null
         
