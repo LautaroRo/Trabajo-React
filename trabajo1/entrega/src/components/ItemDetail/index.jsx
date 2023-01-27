@@ -72,7 +72,12 @@ const VerPrecio = () =>{
     {
       detail.Stock === 0
       ?
-      <img src="https://cloudfront-us-east-1.images.arcpublishing.com/semana/D6COKJW4HJCKVFR6UJ6M7VOZNE.jpg"></img>
+      <div>
+        <h1 className="h1Nohay"> Disculpen, se han agotados las copias del producto.</h1>
+        <div className="botonVolver">
+        <Link to="/"><button className="botonV">Volver</button></Link>
+        </div>
+      </div>
       :
       <div className="divPreCompra">
       <div className="h1Comprar">

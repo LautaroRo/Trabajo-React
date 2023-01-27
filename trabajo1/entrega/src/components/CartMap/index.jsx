@@ -21,11 +21,13 @@ const CartMap = ({item}) => {
       <button className='botonCartFormBorrar' onClick={Limpiar}>
         Borrar todos los productos
         </button>
-      <button className='botonCartForm'>
+      
       <Link className="linkDecoration" to="/Comprar">
+      <button className='botonCartForm'>
         Ir a comprar
-      </Link>
         </button>
+      </Link>
+        
       </form>
     
   )

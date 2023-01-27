@@ -27,6 +27,9 @@ const ComprarMap = ({item}) => {
 
 const generarObject = async () =>{
 
+    let Fecha = new Date().toDateString()
+    
+    const Vuelto = MontoFinal - PrecioFinal
     let timerInterval
     Swal.fire({
     title: 'Confirmando Compra',
@@ -49,11 +52,14 @@ const generarObject = async () =>{
             Id : item.id,
             Titulo : item.nombre,
             Cantidad: parseInt(item.cantidad),
-            PrecioFinal: parseInt(PrecioFinal),
-            MontoIngresado: parseInt(MontoFinal),
+            Precio: parseInt(PrecioFinal),
+            Monto: parseInt(MontoFinal),
             Email: Email1,
-            Telefono: Numero
+            Telefono: Numero,
+            fecha: Fecha,
+            vuelto: Vuelto
         }
+        
         console.log(order)
         
         for(const productCart of products){
@@ -72,7 +78,7 @@ const generarObject = async () =>{
         setProducts(updateCart)
         Swal.fire({
             title:"Compra Finalizada",
-            text:`Muchas gracias por comprar en StoreGames. El id del producto es ${item.id}`,
+            text:`Muchas gracias por comprar en StoreGames. El id del producto es: ${item.id}`,
             icon:"success",
             background:"black",
             color:"white"
@@ -153,7 +159,7 @@ return (
             <input type="email" placeholder='ingrese un email' className="inputFormulario" name="email1" required/>
             <input type="email" className="inputFormulario" placeholder='ingrese el mismo email' name="email2" required />
             <input type="number" className="inputNumero" placeholder='numero de telefono (min10)' name="NumeroDeTelefono"required/>
-            <button type='submit' className="botonFormulario">Verificar Precio</button>
+            <button type='submit' className="botonFormularioVerificar">Verificar Precio</button>
             <button className="Eliminar" onClick={() => Eliminar(item.id)}>Eliminar</button>
     </form>
     {

@@ -24,22 +24,22 @@ const Mensaje = ({greeting}) => {
                 <div class="carousel-item active">
                     <img src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_LeagueofLegends_RiotGames_S1_2560x1440-ee500721c06da3ec1e5535a88588c77f" class="d-block w-100" alt="..."/>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>League of Legends</h5>
-                        <Link to="/category/Gratis">Entrar</Link>
+                        
+                        <Link className='h1Mensaje' to="/category/Gratis">Entrar</Link>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="https://cdn.sportslumo.com/wp-content/uploads/2021/12/16151926/5.jpg" class="d-block w-100" alt="..."/>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Fornite</h5>
-                        <Link to="/category/Gratis">Entrar</Link>
+                        
+                        <Link className='h1Mensaje' to="/category/Gratis">Entrar</Link>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="https://culturageek.com.ar/wp-content/uploads/2022/11/mw2-battle-pass-2022-1d13.jpg" class="d-block w-100" alt="..."/>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Warzone</h5>
-                        <Link to="/category/Gratis">Entrar</Link>
+                
+                        <Link className='h1Mensaje' to="/category/Gratis">Entrar</Link>
                     </div>
                 </div>
             </div>

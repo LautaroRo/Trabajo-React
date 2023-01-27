@@ -1,6 +1,6 @@
 import React, { createContext } from 'react'
 import { useState } from 'react'
-
+import Swal from "sweetalert2" 
 export const Shop = createContext()
 
 const ShopProvider = ({children}) => {
@@ -35,6 +35,13 @@ const ShopProvider = ({children}) => {
 
   const Limpiar = () =>{
     setProducts([])
+    Swal.fire({
+      icon: 'success',
+      title: 'Borrar todos los productos',
+      text: 'Se eliminaron todos los productos',
+      background: "black",
+      color:"white"
+    })
   }
 
 
@@ -43,6 +50,14 @@ const ShopProvider = ({children}) => {
     console.log(id)
     const updateCart = products.filter(element => element.id !== id)
     setProducts(updateCart)
+
+    Swal.fire({
+      icon: 'success',
+      title: 'Producto eliminado',
+      text: 'Se elimino el producto seleccionado',
+      background: "black",
+      color:"white"
+    })
   }
 
 

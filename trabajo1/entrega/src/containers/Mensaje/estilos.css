@@ -63,3 +63,12 @@
 .divCarrusel{
     width: 100%;
 }
+
+
+.h1Mensaje{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
+}

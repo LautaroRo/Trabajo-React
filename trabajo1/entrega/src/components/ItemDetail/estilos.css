@@ -142,3 +142,17 @@
 .divPreCompra{
     margin-bottom: 200px;
 }
+
+
+.h1Nohay{
+    background: url("https://4kwallpapers.com/images/wallpapers/outrun-neon-dark-background-purple-1920x1080-4523.jpg");
+    background-size: cover;
+    margin-top: 100px;
+    margin-left: 510px;
+    width: 50%;
+    height: 110px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 5px black;
+    color: white;
+    text-align: center;
+}

@@ -2,10 +2,6 @@
 
 .mensajeCarrito{
     color: white;
-    /*--
-    position: relative  ;
-    top: 50px;
-    left: 570px;--*/
 }
 
 .divComprarProducto{
@@ -34,6 +30,7 @@
     margin-top: 60px;
     height: 50px;
     width: 200px;
+    margin-left: 50px;
 }
 
 .botonNo:hover{
